@@ -9,8 +9,6 @@ let gameCounter = 100
 console.log(gameCounter++)
 
 
-
-
 // Some confusing Conversions
 console.log("1"+2)
 console.log(1+"2")
