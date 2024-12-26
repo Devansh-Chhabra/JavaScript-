@@ -3,7 +3,6 @@
 // To Number
 let score = "33"    
 let toNumber = Number(score);
-
 console.table([typeof score,typeof toNumber,score,toNumber])
 
 score = null
