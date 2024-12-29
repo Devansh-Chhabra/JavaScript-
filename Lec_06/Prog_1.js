@@ -19,7 +19,7 @@ console.log(newString.toUpperCase())
 console.log(newString.charAt(2))
 console.log(newString.indexOf('G'))
 
-// Substring and Slicing
+// Substring and Slicing : ignores the last index
 console.log(newString.substring(2,4))
 console.log(newString.substring(2))
 console.log(newString.substring(4,2))  //automatically reverses the index
@@ -29,3 +29,16 @@ console.log(newString.slice(2,4))
 console.log(newString.slice(2))
 console.log(newString.slice(4,2)) // start > end -> empty
 console.log(newString.slice(-3,-1))
+
+let tempString = "     Devansh     ";
+tempString = tempString.trim();
+console.log(tempString);
+
+let url = "https://devansh.com/devansh%20chhabra%20"
+url = url.replace("%20","-")    // First Occurence only
+console.log(url)
+
+console.log(url.includes("Devansh"))    // case-sensitive
+
+url = "https :: // devansh.com/devansh %20 chhabra"
+console.log(url.split(" "))  // breaks into array on the basis of the given parameter
